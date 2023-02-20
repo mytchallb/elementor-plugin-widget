@@ -1,8 +1,13 @@
 # Dockerized WordPress for Elementor Plugin Development
 
 Edit the installed plugin under `wordpress/wp-content/plugins/elementor-awesomesauce` to develop your own plugin.
+
 <https://developers.elementor.com/docs/getting-started/first-addon/>
+
 <https://www.benmarshall.me/create-an-elementor-widget/>
+
+<https://elementor.github.io/elementor-icons/>
+
 
 ## Initial Setup
 
