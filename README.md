@@ -1,4 +1,8 @@
-# Dockerized WordPress with MariaDB and PHP 7.4
+# Dockerized WordPress for Elementor Plugin Development
+
+Edit the installed plugin under `wordpress/wp-content/plugins/elementor-awesomesauce` to develop your own plugin.
+<https://developers.elementor.com/docs/getting-started/first-addon/>
+<https://www.benmarshall.me/create-an-elementor-widget/>
 
 ## Initial Setup
 
@@ -17,8 +21,6 @@ docker-compose up -d
 ```
 
 ## Persisting Data
-
-To keep files down to a minimum and to prepare for a combined CI/CD (continuous integration and continuous delivery) practice, containers are removed when you stop the dockerized app. Simply meant, all your data and configurations will be lost and the next time you run the images, the database will be reinitialized.
 
 To avoid this loss of data, volumes are mounted that will persist even after the containers were removed.
 
@@ -51,3 +53,4 @@ For security reasons, it is advisable to use SSH tunneling to access the databas
 ## Custom Directives
 
 If your site requires specific PHP directives (e.g., increased memory size), you can manage directive overrides through the provided `custom.ini` file.
+
